@@ -1,0 +1,11 @@
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.buttons .main-buttons{
+    display: flex;
+    gap: .5rem;
+}
+
