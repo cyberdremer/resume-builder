@@ -1,20 +1,20 @@
-import '../styles/InputGroup.css'
-
+import "../styles/InputStyling/InputGroup.css";
 
 export default function InputGroup({
-  nameOfInput = "",
-  value ="",
-  required = true,
-  placeHolder= "",
-  errorMessage= "Default Error",
-  inputID="",
-  input = "input",
-  inputType = "text"
+  id,
+  labelText,
+  placeholder,
+  inputType,
+  onChange,
+  value,
+  required,
+  errorMessage,
+  "data-key": dataKey,
 }) {
   return (
     <div className="input-group">
-      <label htmlFor={nameOfInput}>
-        <span className="label-text">{nameOfInput + ": "}</span>
+      <label htmlFor={id}>
+        <span className="label-text">{labelText + ": "}</span>
         {required ? (
           <span className="required-text">Required</span>
         ) : (
@@ -22,20 +22,22 @@ export default function InputGroup({
         )}
         <span className="error">{errorMessage}</span>
       </label>
-      {input === "textarea" ? (
+      {inputType === "textarea" ? (
         <textarea
-          id={inputID}
-          name={nameOfInput}
-          placeholder={placeHolder}
+          id={id}
+          placeholder={placeholder}
           value={value}
+          onChange={onChange}
+          data-key={dataKey}
         ></textarea>
       ) : (
         <input
           type={inputType}
-          name={nameOfInput}
-          id={inputID}
-          placeholder={placeHolder}
+          id={id}
+          placeholder={placeholder}
           value={value}
+          onChange={onChange}
+          data-key={dataKey}
         />
       )}
     </div>
