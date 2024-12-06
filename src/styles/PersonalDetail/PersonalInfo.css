@@ -1,0 +1,6 @@
+.personal-info .contact-info{
+    display: flex;
+    justify-content: center;
+    gap: .4rem;
+
+}

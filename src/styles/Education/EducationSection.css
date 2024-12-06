@@ -1,0 +1,14 @@
+.education-info {
+    display: flex;
+    margin-left: 1rem;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.info-column {
+    text-align: start;
+}
+
+.info-column #school-name {
+    font-weight: bolder;
+}

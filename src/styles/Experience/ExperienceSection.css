@@ -1,0 +1,23 @@
+.experience-info{
+    display: flex;
+    margin-left: 1rem;
+    justify-content: flex-start;
+    gap:3rem;
+}
+
+
+.info-columnn #job-title{
+    font-weight: bold;
+}
+
+.info-column {
+    text-align: start;
+}
+
+p{
+    line-height: .5rem;
+}
+
+
+
+
