@@ -1,9 +1,12 @@
+import "../../styles/PersonalDetail/PersonalInfo.css"
+
 export default function PersonalInfoSection({
-  fullname,
-  email,
-  phoneNumber,
-  address,
+  fullname = "",
+  email = "",
+  phoneNumber = "",
+  address = "",
 }) {
+    return(
   <div className="personal-info">
     <h1 className="full-name">{fullname}</h1>
     <div className="contact-info">
@@ -27,5 +30,5 @@ export default function PersonalInfoSection({
         )
       }
     </div>
-  </div>;
+  </div>);
 }
