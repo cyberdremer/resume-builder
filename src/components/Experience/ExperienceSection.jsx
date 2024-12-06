@@ -1,19 +1,21 @@
+import '../../styles/Experience/ExperienceSection.css'
 export default function ExperienceSection({
-  startDate,
-  endDate,
-  jobLocation,
-  companyName,
-  jobTitle,
-  jobDescription,
+  startDate="",
+  endDate="",
+  jobLocation="",
+  companyName="",
+  jobTitle="",
+  jobDescription="Hello",
 }) {
     return(<div className="experience-info">
         <div className="timeframe-column">
-            <span>{startDate + "-" + endDate}</span>
-            <span>{jobLocation}</span>
+            <p>{startDate + "-" + endDate}</p>
+            <p>{jobLocation}</p>
         </div>
-        <div className="jobinfo-column">
-            <span id="job-title">{jobTitle}</span>
-            <span>{companyName}<br />{jobDescription}</span>
+        <div className="info-column">
+            <p id="job-title">{jobTitle}</p>
+            <p>{companyName} </p>
+            <p>{jobDescription}</p>
         </div>
     </div>);
 
