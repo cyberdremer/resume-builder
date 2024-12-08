@@ -1,4 +1,5 @@
-import InputGroup from "../InputGroup";
+import InputGroup from "../InputGroup.jsx";
+import '../../styles/PersonalDetail/PersonalDetails.css'
 
 export default function PersonalDetail({
   onChange,
@@ -18,7 +19,7 @@ export default function PersonalDetail({
             placeholder="First and Last Name"
             value={name}
             onChange={onChange}
-            data-key="fullName"
+            data-key="name"
             />
             <InputGroup
             inputType="email"
