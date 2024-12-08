@@ -1,31 +1,29 @@
 import "../../styles/PersonalDetail/PersonalInfo.css"
 
 export default function PersonalInfoSection({
-  fullname = "",
-  email = "",
-  phoneNumber = "",
-  address = "",
+    personalInfo
+  
 }) {
     return(
   <div className="personal-info">
-    <h1 className="full-name">{fullname}</h1>
+    <h1 className="full-name">{personalInfo.name}</h1>
     <div className="contact-info">
-      {email && (
+      {personalInfo.email && (
         <div>
-          <span>{email}</span>
+          <span>{personalInfo.email}</span>
         </div>
       )}
 
-      {phoneNumber && (
+      {personalInfo.phoneNumber && (
         <div>
-          <span>{phoneNumber}</span>
+          <span>{personalInfo.phoneNumber}</span>
         </div>
       )}
 
       {
-        address && (
+        personalInfo.address && (
             <div>
-                <span>{address}</span>
+                <span>{personalInfo.address}</span>
             </div>
         )
       }
