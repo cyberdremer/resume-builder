@@ -6,8 +6,8 @@
 }
 
 
-.info-columnn #job-title{
-    font-weight: bold;
+#job-title{
+    font-weight: bolder;
 }
 
 .info-column {
@@ -15,8 +15,9 @@
 }
 
 p{
-    line-height: .5rem;
+    line-height: .7rem;
 }
+
 
 
 

@@ -1,0 +1,11 @@
+.personal-details h2 {
+    text-align: start;
+
+}
+
+.personal-details {
+    min-width: 27vw;
+    background-color: #555555  ;
+    border-radius: 10px;
+
+}

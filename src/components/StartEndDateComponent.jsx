@@ -12,7 +12,7 @@ export default function StartDateEndDate({startDate, endDate, onChange}){
             placeholder="Enter Start Date"
             value={startDate}
             onChange={onChange}
-            data-key="start-date"
+            data-key="startDate"
             />
             <InputGroup
             inputType="date"
@@ -21,7 +21,7 @@ export default function StartDateEndDate({startDate, endDate, onChange}){
             placeholder="Enter End Date"
             value={endDate}
             onChange={onChange}
-            data-key="end-date"
+            data-key="endDate"
             />
         </div>
     );

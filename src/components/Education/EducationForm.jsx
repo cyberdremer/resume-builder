@@ -1,16 +1,17 @@
-import InputGroup from "../InputGroup";
-import Buttons from "../../Buttons/Buttons";
-import StartDateEndDate from "../StartEndDateComponent";
+import InputGroup from "../InputGroup.jsx";
+import Buttons from "../../Buttons/Buttons.jsx";
+import StartDateEndDate from "../StartEndDateComponent.jsx";
+import '../../styles/Education/EducationForm.css'
 
 export default function EducationForm({
-  schoolName = "",
+  name = "",
   schoolLocation = "",
   degree = "",
   major = "",
   startDate= "",
   endDate = "",
   id = "",
-  onChange = "",
+  onChange,
   save,
   cancel,
   remove
@@ -27,10 +28,10 @@ export default function EducationForm({
         inputType="text"
         id="school-name"
         labelText="School Name"
-        placeholder="Enter school name..."
-        value={schoolName}
+        placeholder="Enter school name"
+        value={name}
         onChange={onChange}
-        data-key="school-name"
+        data-key="name"
         />
 
         <InputGroup
@@ -40,7 +41,7 @@ export default function EducationForm({
         placeholder="Enter school location"
         value={schoolLocation}
         onChange={onChange}
-        data-key="school-location"
+        data-key="schoolLocation"
         />
 
         <InputGroup
@@ -50,7 +51,7 @@ export default function EducationForm({
         placeholder="Enter degree"
         value={degree}
         onChange={onChange}
-        data-key="degree-name"
+        data-key="degree"
         />
 
         <InputGroup
